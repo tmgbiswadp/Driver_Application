@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:id="@+id/wholemap"
+             android:orientation="vertical">
+
+    <fragment
+            android:id="@+id/map"
+            class="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    <Button android:text="Emergency"
+            android:layout_gravity="bottom"
+            android:background="@drawable/emergency_button"
+            android:id="@+id/emergency"
+            android:visibility="gone"
+            android:layout_marginStart="50dp"
+            android:layout_marginBottom="30dp"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content">
+
+        <!-- Gravity button aligns the button to the bottom of the page-->
+    </Button>
+
+</FrameLayout>

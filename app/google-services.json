@@ -1,0 +1,101 @@
+{
+  "project_info": {
+    "project_number": "269658807225",
+    "firebase_url": "https://monitor-me-225818.firebaseio.com",
+    "project_id": "monitor-me-225818",
+    "storage_bucket": "monitor-me-225818.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:269658807225:android:d202c69442169c49",
+        "android_client_info": {
+          "package_name": "com.dune.monitorme"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "269658807225-4hnuuaoths6t8e1inh35a5ndeia8vjab.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dune.monitorme",
+            "certificate_hash": "207cc16fbdd5a0dc1df25d2df9032e78df7e69ed"
+          }
+        },
+        {
+          "client_id": "269658807225-143qc1lor4kn0e8itpb75ajllq899kp4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dune.monitorme",
+            "certificate_hash": "f5d0fc61aa5a272be5ed16d6a4c7ce848f442a1f"
+          }
+        },
+        {
+          "client_id": "269658807225-fdqufn57d95af8egjpet778k7t9pj046.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDLysqyLXacKt9QvEckd6vS1FzTkDy6OzU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "269658807225-fdqufn57d95af8egjpet778k7t9pj046.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:269658807225:android:91e4dbfd875f414c",
+        "android_client_info": {
+          "package_name": "com.example.me"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "269658807225-ctrnnn63tgrhcj4p9novnb70ttteena6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.me",
+            "certificate_hash": "207cc16fbdd5a0dc1df25d2df9032e78df7e69ed"
+          }
+        },
+        {
+          "client_id": "269658807225-v7l6a9u19uivar6to4fcimsl5ar05n4c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.me",
+            "certificate_hash": "f5d0fc61aa5a272be5ed16d6a4c7ce848f442a1f"
+          }
+        },
+        {
+          "client_id": "269658807225-fdqufn57d95af8egjpet778k7t9pj046.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDLysqyLXacKt9QvEckd6vS1FzTkDy6OzU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "269658807225-fdqufn57d95af8egjpet778k7t9pj046.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

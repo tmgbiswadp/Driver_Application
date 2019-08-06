@@ -1,0 +1,90 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.dune.monitorme"
+        minSdkVersion 21
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support:design:28.0.0'
+    //For constraint layout
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation 'com.android.support:support-v4:28.0.0'
+    //The Support Library is a static library that you can add to your Android application
+    // in order to use APIs that are either not available for older platform versions or
+    // utility APIs that aren't a part of the framework APIs. Compatible on devices running
+    // API 14 or later.
+
+
+//When you develop an app on a latest version of android like 5.x and you
+    // also want it to run on those devices which are running older versions of android like 3.2 e.t.c. you can't do that until you
+    // add backward compatibility to your code.
+    //To provide this backward compatibility android provides you the Android Support Library package.
+    // The Android Support Library package is a set of code libraries that provide backward-compatible versions
+    // of Android framework APIs as well as features that are only available through the library APIs. Each Support Library is
+    // backward-compatible to a specific Android API level.
+
+
+    //Google play services SDK for maps
+    implementation 'com.google.android.gms:play-services-maps:16.1.0'
+
+    //adding for Location request, Fused Location Provider, Location Services and location callback in navigation class
+    implementation 'com.google.android.gms:play-services-location:16.0.0'
+
+    //adding firebase auth with this line
+    implementation 'com.google.firebase:firebase-auth:16.2.1'
+
+    //adding realtime firebase database into this project with this line
+    implementation 'com.google.firebase:firebase-database:16.1.0'
+
+
+    // testImplementation 'junit:junit:4.12'
+    //androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    //androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+    implementation 'com.firebase:geofire-android:2.3.1'
+    //For realtime location queries with firebase
+    //firebase storage
+    implementation 'com.google.firebase:firebase-storage:16.1.0'
+    //implementing glide image loading library
+    implementation 'com.github.bumptech.glide:glide:4.9.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.9.0'
+
+
+    //for circular image
+    implementation 'de.hdodenhof:circleimageview:3.0.0'
+
+    //for notifiacation purpose
+    //i.e implementing firecloud messaging
+    implementation 'com.google.firebase:firebase-messaging:17.6.0'
+    //work manager
+}
+apply plugin: 'com.google.gms.google-services'
+//Following the official documentation
+//Google Play services Gradle plugin
+//This plugin converts the google-services.json file for Firebase into a set of resource
+//that the Firebase libraries can use. It also references the strict-version-matcher plugin,
+//and will execute those checks as well
+

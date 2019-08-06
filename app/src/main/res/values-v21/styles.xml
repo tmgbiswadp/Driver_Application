@@ -1,0 +1,8 @@
+<resources>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:statusBarColor">@null</item> <!--changed from android:color/transparent to null -->
+        <!-- NUll is used instead of color/transparent becauese it was showing a white line above the page-->
+    </style>
+</resources>

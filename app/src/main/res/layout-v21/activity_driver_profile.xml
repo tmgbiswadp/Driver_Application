@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/driverprofile"
+            tools:context=".DriverProfile">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <ImageView
+                android:id="@+id/header_cover_image"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/shit"
+                android:scaleType="centerCrop"
+                android:contentDescription="image"
+                tools:ignore="HardcodedText"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/user_profile_photo"
+                android:layout_width="174dp"
+                android:layout_height="168dp"
+                android:layout_below="@+id/header_cover_image"
+                android:layout_centerHorizontal="true"
+                android:elevation="5dp"
+                android:layout_marginTop="-95dp"
+                android:scaleType="centerCrop"
+        />
+        <RelativeLayout
+                android:id="@+id/profile_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/header_cover_image"
+                android:background="#ebca0707"
+                android:paddingBottom="24dp">
+
+
+            <TextView
+                    android:id="@+id/changephoto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="76dp"
+                    android:textColor="#000"
+                    android:textSize="32sp"
+                    android:text="Change Photo"
+                    android:onClick="gotophotoupdatepage"
+                    android:fontFamily="sans-serif"
+                    tools:ignore="HardcodedText"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profile_layout"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+
+            <TextView
+                    android:id="@+id/user_profile_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="#fff"
+                    android:textColor="#000"
+                    android:elevation="4dp"
+                    android:fontFamily="Sans Serif"
+                    android:textSize="18sp"
+                    android:padding="15dp"
+            />
+
+            <TextView
+                    android:id="@+id/licenseno"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="#fff"
+                    android:textColor="#000"
+                    android:elevation="4dp"
+                    android:fontFamily="Sans Serif"
+                    android:textSize="18sp"
+                    android:padding="15dp"
+            />
+            <TextView
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="#fff"
+                    android:textSize="18sp"
+                    android:elevation="4dp"
+                    android:padding="15dp"
+                    android:textColor="#000"
+            />
+            <TextView
+                    android:id="@+id/contact"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginTop="3dp"
+                    android:background="#fff"
+                    android:elevation="4dp"
+                    android:textSize="18sp"
+                    android:textColor="#000"
+                    android:padding="15dp"
+            />
+
+            <TextView
+                    android:id="@+id/address"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="#fff"
+                    android:textSize="18sp"
+                    android:padding="15dp"
+                    android:elevation="4dp"
+                    android:textColor="#000"
+            />
+
+            <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginTop="3dp"
+                    android:id="@+id/route"
+                    android:background="#fff"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    android:padding="15dp"
+                    android:elevation="4dp"
+            />
+            <Button android:layout_width="350dp"
+                    android:text="Update"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/login_button"
+                    android:onClick="gotoupdatepage"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    tools:ignore="HardcodedText"/>
+        </LinearLayout>
+
+        <android.support.design.widget.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                app:srcCompat="?attr/actionModeCloseDrawable"
+                android:id="@+id/fab"/>
+    </RelativeLayout>
+
+</ScrollView>

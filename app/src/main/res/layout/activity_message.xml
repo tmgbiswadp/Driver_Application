@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".Message">
+
+    <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:background="?android:attr/selectableItemBackground"
+            app:srcCompat="?attr/actionModeCloseDrawable"
+            android:layout_height="wrap_content"
+            android:onClick="backtonavigation"
+            />
+
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginStart="15dp"
+              android:layout_marginTop="10dp"
+              android:textSize="16sp"
+              android:text="Contact" tools:ignore="HardcodedText"/>
+
+    <EditText
+            android:id="@+id/contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter contact number here"
+            android:padding="20dp"
+            android:textSize="18sp"
+            android:inputType="numberDecimal"
+            android:textColor="#000"
+            android:focusable="true" tools:ignore="Autofill,HardcodedText"/>
+
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_margin="5dp"
+                android:maxLines="2"
+                android:id="@+id/sms"
+                android:padding="20dp"
+                android:hint="Enter your text here"
+                android:layout_height="70dp"
+                tools:ignore="Autofill,HardcodedText" android:inputType="text"/>
+
+    <Button android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/login_button"
+            android:id="@+id/send"
+            android:text="Send" tools:ignore="HardcodedText"/>
+
+</LinearLayout>
